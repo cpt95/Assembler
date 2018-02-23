@@ -1,0 +1,5 @@
+﻿  instructions.cpp
+c:\users\mifo\documents\visual studio 2015\projects\ssprojekat2\ssprojekat2\instructions.cpp(60): warning C4018: '<': signed/unsigned mismatch
+c:\users\mifo\documents\visual studio 2015\projects\ssprojekat2\ssprojekat2\instructions.cpp(86): warning C4018: '<': signed/unsigned mismatch
+  SSProjekat2.vcxproj -> C:\Users\mifo\documents\visual studio 2015\Projects\SSProjekat2\Debug\SSProjekat2.exe
+  SSProjekat2.vcxproj -> C:\Users\mifo\documents\visual studio 2015\Projects\SSProjekat2\Debug\SSProjekat2.pdb (Full PDB)

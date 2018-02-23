@@ -1,0 +1,26 @@
+; print asdqwe
+.data
+pocetak_stringa:
+DB 'a', 's', 'd', 'q', 'w', 'e'
+kraj_stringa:
+out DEF 32 * 4
+duzina_stringa DEF kraj_stringa - pocetak_stringa
+.global START
+
+.text
+START:
+LOAD R8, out
+LOAD R0, #0	; i = 0
+LOAD R1, #duzina_stringa
+LOAD R4, #1
+loop: SUB R2, R1, R0	
+JZ R2, kraj	; while(i != N)
+LOADUB R3, [R0 + pocetak_stringa]
+STOREB R3, [R8]
+ADD R0, R0, R4	; i++
+JMP loop
+kraj:
+XOR R0, R0, R0
+INT R0
+
+.end
